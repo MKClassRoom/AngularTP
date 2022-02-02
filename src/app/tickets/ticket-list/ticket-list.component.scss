@@ -1,0 +1,15 @@
+// You can apply style directly to a component
+app-ticket {
+  margin: 0.2em;
+}
+
+.ticket {
+  width: 40%;
+}
+
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

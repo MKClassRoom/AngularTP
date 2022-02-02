@@ -1,0 +1,17 @@
+<h3>Create a new ticket</h3>
+<form class="ticket-form" [formGroup]="ticketForm">
+  <label for="title">
+    Title <br>
+    <input class="input-custom" type="text" id="title" [formControlName]="'title'">
+  </label>
+  <br>
+  <label for="description">
+    Description <br>
+    <input class="input-custom" type="text" id="description" [formControlName]="'description'">
+  </label>
+  <br>
+  <button type="submit" class="btn-custom" (click)="addTicket()">Create</button>
+</form>
+
+<!-- Uncomment below to see your form structure and how it changes-->
+<!--<br><br>{{ticketForm.getRawValue() | json}}-->

@@ -1,0 +1,7 @@
+<div class="ticket-list">
+  <div class="ticket" *ngFor="let ticket of ticketList">
+      <!--Inputs & Output allow communication between parent & child components.-->
+      <!--More information: https://angular.io/guide/component-interaction-->
+      <app-ticket [ticket]="ticket" (ticketHasBeenSelected)="ticketHasBeenSelected($event)"></app-ticket>
+  </div>
+</div>
